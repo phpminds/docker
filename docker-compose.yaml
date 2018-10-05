@@ -2,8 +2,7 @@ version: '2'
 services:
 
     phpminds-nginx:
-        build: docker/nginx
-        image: phpminds-nginx
+        image: phpminds/nginx:1.10
         restart: always
         hostname: phpminds.docker
         depends_on:
@@ -19,8 +18,7 @@ services:
 
 
     phpminds-php:
-        build: docker/php
-        image: phpminds-php:php72
+        image: phpminds/php:7.2.10
         restart: always
         volumes:
             - .:/app
