@@ -18,7 +18,7 @@ services:
 
 
     phpminds-php:
-        image: phpminds/php:7.2.10
+        image: phpminds/php:7.2.11
         restart: always
         volumes:
             - .:/app
